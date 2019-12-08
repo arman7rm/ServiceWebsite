@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        
+     <div class="container">
+            <header>
+                    <div class="first bar">
+                            <img src="images/logo.svg" alt="Mountain Goat" class="logo">
+                    </div>
+                    <nav class = "navbar">
+                        <a href="#" class = "hide-desktop">
+                            <img src="images/ham.svg" alt="nav" class="menu" id="menu">
+                        </a>
+                        <ul class = "show-desktop hide-mobile" id="nav">
+                            <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit"></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+        <section>
+                <img src="images/server.svg" alt="server" class="server">
+                <h1>E-commerce success for modern Business</h1>
+                <p class="subhead">Let us take your business to the next level.</p>
+        
+                <img src="images/scroll.svg" alt="scroll" class="scroll hide-mobile show-desktop">
+            </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="icon1">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+                </li>
+                
+                <li>
+                        <img src="images/icon-2.svg" alt="icon2">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+                    </li>
+                    
+                <li>
+                        <img src="images/icon-3.svg" alt="icon3">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="user1">
+                        <blockquote>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</blockquote>
+                        <figcaption>-Jane Doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="user2">
+                        <blockquote>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</blockquote>
+                        <figcaption>-John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Book a consultation now!</h2>
+        <a href="#" class = "cta">Start Now</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" alt="logo">
+                </a>
+                <p class="adress">1142 Lexington ave. New York, NY<br>USA</p>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault(); 
+        });
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault(); 
+        });
+    </script>
+
+</body>   
+</html>
